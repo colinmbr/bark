@@ -3,10 +3,12 @@ console.log("Hello World!");
 const form = document.querySelector("form");
 const loadingElement = document.querySelector(".loading");
 const barksElement = document.querySelector(".barks");
-const API_URL = "http://localhost:5000/barks";
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:5000/barks"
+    : "https://cryptic-waters-12707.herokuapp.com/";
 
 loadingElement.style.display = "";
-
 listAllBarks();
 
 form.addEventListener("submit", (event) => {
