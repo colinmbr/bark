@@ -6,7 +6,7 @@ const barksElement = document.querySelector(".barks");
 const API_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:5000/barks"
-    : "https://cryptic-waters-12707.herokuapp.com/";
+    : "https://cryptic-waters-12707.herokuapp.com/barks";
 
 loadingElement.style.display = "";
 listAllBarks();
