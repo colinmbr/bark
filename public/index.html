@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@515&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>bark - leave a message!</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>bark</h1>
+        <div>
+          <div class="title-mark" id="mark-one"></div>
+          <div class="title-mark" id="mark-two"></div>
+          <div class="title-mark" id="mark-three"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form class="bark-form">
+        <label for="name">Name</label>
+        <input
+          class="form-input-box"
+          type="text"
+          name="name"
+          id="name"
+          autofocus="autofocus"
+          maxlength="20"
+        />
+        <label for="content">bark</label>
+        <textarea
+          class="form-input-box"
+          name="content"
+          id="content"
+          maxlength="250"
+        ></textarea>
+        <div class="send-bark-button-container">
+          <button class="send-bark-button">BARK BARK</button>
+        </div>
+      </form>
+      <div class="loading">
+        <img src="./loading.gif" alt="" />
+      </div>
+      <div class="barks"></div>
+    </main>
+    <script src="client.js"></script>
+  </body>
+</html>
